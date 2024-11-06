@@ -1,0 +1,17 @@
+.triangle {
+  position: relative;
+}
+
+.triangle::before {
+  content: "";
+  top: 45px;
+  left: 338px;
+  position: absolute;
+  border-top: 0;
+  border-left: 17px solid transparent;
+  border-bottom: 32px solid #292524;
+  border-right: 17px solid transparent;
+  transform: rotate(135deg);
+}
+
+/* #292524 */
