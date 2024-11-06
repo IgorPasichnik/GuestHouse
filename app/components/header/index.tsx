@@ -21,11 +21,11 @@ const Header = () => {
   }, [isShrunk]);
 
   return (
-    <div className="w-full flex justify-center">
+    <div className="h-auto w-full flex justify-center">
       <header
         className={`${
           isShrunk ? "h-[40px] text-xs" : "h-[60px] text-base"
-        } z-50 flex flex-col items-center justify-center bg-customGray text-white fixed left-0 right-0 top-0 shadow-customDownShadow transition-all duration-300 ease-in-out`}
+        } z-50 flex flex-col items-center justify-center bg-stone-800 text-white fixed left-0 right-0 top-0 shadow-customDownShadow transition-all duration-300 ease-in-out`}
       >
         <nav className="w-5/6 py-2 px-4 max-w-[1500px] flex justify-between">
           <Link href="/" className={`${isShrunk ? "h-[25px]" : "h-[40px]"}`}>
@@ -53,11 +53,11 @@ const Header = () => {
               Отзывы
             </Link>
             <div className={`px-2 ${isShrunk ? "separator" : "separator2"}`} />
-            <Link href="/" className="relative linkss">
+            <Link href="/pricing" className="relative linkss">
               Цены
             </Link>
             <div className={`px-2 ${isShrunk ? "separator" : "separator2"}`} />
-            <Link href="/" className="relative linkss">
+            <Link href="/contacts" className="relative linkss">
               Контакты
             </Link>
           </ul>
@@ -67,13 +67,13 @@ const Header = () => {
           className={`${
             isShrunk
               ? "fixed scale-50 border-white text-white hover:text-white"
-              : "scale-75 border-customGray text-customGray invisible"
+              : "scale-75 border-stone-800 text-stone-800 invisible"
           } absolute flex flex-col items-center text-3xl font-light border-4 rounded-full py-2 px-14 transition-all duration-300 ease-in-out hover:bg-greenYardDark hover:border-greenYardDark `}
         >
           Забронировать
         </button>
       </header>
-      <button
+      {/* <button
         className={`${
           isShrunk
             ? ""
@@ -81,7 +81,7 @@ const Header = () => {
         } z-40 absolute flex flex-col items-center text-3xl font-light border-4 rounded-full py-2 px-14 transition-all duration-300 ease-in-out hover:bg-greenYardDark hover:border-greenYardDark `}
       >
         Забронировать
-      </button>
+      </button> */}
     </div>
   );
 };

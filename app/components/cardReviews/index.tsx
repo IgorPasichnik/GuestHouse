@@ -13,10 +13,10 @@ type NameDesk = {
   name: string;
 };
 
-const CardReviews = ({ key, description, name }: NameDesk) => {
-  const isMobile = matchMedia("(max-width: 768px)");
+const CardReviews = ({ description, name }: NameDesk) => {
+  const isMobile = 0;
   const wrapper = useRef<HTMLDivElement>(null);
-  const hasScroll = !isMobile.matches;
+  const hasScroll = !isMobile;
 
   useScrollbar({ root: wrapper, hasScroll });
 

@@ -4,7 +4,7 @@ import "./links.css";
 import { Playwrite_AU_QLD } from "next/font/google";
 
 const playfair = Playwrite_AU_QLD({
-  weight: ["400"],
+  weight: ["100", "200", "300", "400"],
 });
 
 const Footer = () => {
@@ -26,7 +26,7 @@ const Footer = () => {
             </h1>
           </div>
 
-          <ul className="flex items-center space-x-5">
+          <ul className="flex items-center space-x-5 text-black">
             <Link href="/" className="relative links">
               О нас
             </Link>
@@ -36,10 +36,10 @@ const Footer = () => {
             <Link href="/" className="relative links">
               Отзывы
             </Link>
-            <Link href="/" className="relative links">
+            <Link href="/pricing" className="relative links">
               Цены
             </Link>
-            <Link href="/" className="relative links">
+            <Link href="/contacts" className="relative links">
               Контакты
             </Link>
           </ul>
